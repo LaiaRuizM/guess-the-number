@@ -29,21 +29,18 @@ function useRandomNumber() {
      console.log(number);
 }
 
-// selectButton = 0;
-function reTry () {
-    selectButton += 1;
-    letsTry.innerHTML = selectButton.value;
+const countAttemps = getRandomNumber(100);
+let attempts = 1;
+
+function reTry() {
+    const totalTries = attempts++;
+    letsTry.innerHTML = `Número de intentos: ${totalTries}`;
 } 
-
-
-
-
 
 function handleClickButton(event) {
     event.preventDefault();
     useRandomNumber();
     reTry();
 }
-
 
 selectButton.addEventListener("click", handleClickButton);
