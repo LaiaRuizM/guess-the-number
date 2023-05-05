@@ -2,53 +2,133 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     font-family: "Chivo Mono", monospace;
  }
 
- :root {
-     font-family: 'Roboto', sans-serif;
-     color: #3b3939;
- }
+.body {
+   background-image: url(../images/randomNumber.jpeg);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: #585353;
+   background-color: white;
+   opacity: 0.9;
+   margin: 30px 30px;
+   width: 300px;
+   height: 320px;
+   font-size: 10px;
+   border-radius: 15px;
+   @media (min-width: 768px) {
+      width: 500px;
+      height: 400px;
+      font-size: 20px;
+   }
+   @media (min-width: 1024px) {
+      font-size: 25px;
+      width: 700px;
+      height: 450px;
+   }
+}
 
  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
- }
-
- .body {
-    margin: 10px 20px 0 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 240px;
+   font-size: 16px;
+   box-shadow: 2px 2px 8px black;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   @media (min-width: 768px) {
+      width: 300px;
+      font-size: 20px;
+   }
+   @media (min-width: 1024px) {
+      font-size: 35px;
+      width: 500px;
+   }
  }
 
  .button {
-    margin-top: 10px;
-    background: #06e6cf;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+   margin-top: 10px;
+   background: #06e6cf;
+   color: white;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   width: 90px;
+   height: 30px;
+   margin-bottom: 10px;
+   box-shadow: 2px 2px 8px black;
+   @media (min-width: 1024px) {
+      font-size: 30px;
+      height: 40px;
+      width: 150px;
+   }
+ }
+
+ .reset {
+   width: 90px;
+   height: 30px;
+   background: white;
+   color: #06e6cf;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   box-shadow: 2px 2px 8px black;
+   margin-bottom: 15px;
+   @media (min-width: 1024px) {
+      font-size: 30px;
+      height: 40px;
+      width: 150px;
+   }
  }
 
  .usernumber {
-    background-color: gainsboro;
-    border-radius: 4px;
-    border: none;
-    height: 25px;
-    width: 200px;
-    margin-top: 10px;
+   background-color: gainsboro;
+   border-radius: 4px;
+   border: none;
+   height: 25px;
+   width: 200px;
+   margin-top: 10px;
+   @media (min-width: 1024px) {
+      font-size: 24px;
+      width: 400px;
+   }
  }
-
+ 
  .message, .attempt {
-    padding: 5px;
-    padding-left: 10px;
-    border: 2px solid rgb(201, 194, 194);
+   padding: 5px;
+   border: 2px solid #06e6cf;
+   font-size: 16px;
+   width: 250px;
+   @media (min-width: 768px) {
+      width: 440px;
+      margin-bottom: 10px;
+   }
+   @media (min-width: 1024px) {
+      font-size: 20px;
+      width: 550px;
+   }
  }
 
 .message {
-    margin-top: 10px;
+   margin-top: 10px;
 }
 
- .attempt {
-    margin-top: 5px;
- }
+.attempt {
+   margin-top: 5px;
+   margin-bottom: 10px;
+   border: 2px dashed #06e6cf;
+}
+
+.title{
+   margin-bottom: 10px;
+}
