@@ -2,9 +2,11 @@
 
 const selectNumber = document.querySelector(".js-number");
 const selectButton = document.querySelector(".js-btn");
-const tipMessage = document.querySelector(".js-message");
+const tipMessage = document.querySelector(".js-clue");
+const resetBtn = document.querySelector(".js-reset");
 const letsTry = document.querySelector(".js-try");
-const number = getRandomNumber(100);
+let number = getRandomNumber(100);
+let attempts = 0;
 
 // Función del número aleatorio
 function getRandomNumber(max) {
@@ -35,9 +37,6 @@ function useRandomNumber() {
   }
 }
 
-// const countAttemps = getRandomNumber(100);
-let attempts = 0;
-
 // Función contador -> incremento del contador, cada vez que se intenta adivinar el número
 function reTry() {
   const totalTries = attempts++;
@@ -51,5 +50,13 @@ function handleClickButton(event) {
   reTry();
 }
 
-// Evento: click en button
+function handleClickReset() {
+  number = getRandomNumber(100);
+  selectNumber.value = "";
+  insertClue("Clue: Enter the number and click on Try it");
+  letsTry.innerHTML = "Number of attempts: 0";
+}
+
+// Evento: click en button y reset
 selectButton.addEventListener("click", handleClickButton);
+resetBtn.addEventListener("click", handleClickReset);
