@@ -13,7 +13,7 @@
     "dist": "docs/api/"
   },
   "css": {
-    "src": "src/scss/**/*.scss",
+    "src": "src/css/**/*.css",
     "dest": "public/assets/css/",
     "dist": "docs/assets/css/"
   },

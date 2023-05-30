@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="LaiaRuiz.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number | Laia Ruiz Martínez</title>
+    <link rel="preconnect" href="https://fonts.google.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/images/tryToGuess.png" />
+</head>
+
+<body class="body">
+    <main class="container">
+        <h1 class="title">Guess the number</h1>
+        <form action="#" class="form">
+            <label for="number">Enter here your number:</label>
+            <input type="number" id="number" class="usernumber js-number" />
+            <input type="button" class="button js-btn" value="Try it" />
+            <input type="button" class="reset js-reset" value="Reset" />
+        </form>
+        <p class="message js-clue">Clue: Enter the number and click on "Try it"</p>
+        <p class="attempt js-try">Number of attemps: 0</p>
+    </main>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
