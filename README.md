@@ -16,7 +16,8 @@
 
 ## -- Screenshots --
 
-![](./images/website)
+<p align="center" style="margin-center:8%">
+<img src="./src/images/website.png" alt="Diagram"/></p>
 
 ## -- Table of contents --
 
@@ -47,7 +48,7 @@
 ### Organization
 
 <p align="center" style="margin-center:8%">
-<img src="./images/diagram.png" alt="Diagram"/>
+<img src="./src/images/diagram.png" alt="Diagram"/>
 </p>
 
 ### Built with
